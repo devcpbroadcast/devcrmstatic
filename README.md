@@ -1,14 +1,13 @@
 <<<<<<< HEAD
-# Welcome to your Lovable project
+# Welcome to your Cp Broadcast project
 
-This project was built with [Lovable](https://lovable.dev).
+## Build with Custom
 
-## Build with Lovable
+Open your project in the [Localhost editor](http://localhost:8080/) and keep building.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- **Ship faster**: describe what you want to build and Localhost handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Localhost is committed straight to your repository.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
 - **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development

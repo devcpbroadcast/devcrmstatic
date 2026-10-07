@@ -22,7 +22,12 @@ export function ProjectCard({
   onSelect?: (id: string) => void;
 }) {
   const image = (
-    <div className={cn("relative overflow-hidden bg-muted", view === "grid" ? "h-48 w-full" : "h-44 w-full sm:h-full sm:w-64 sm:shrink-0")}>
+    <div
+      className={cn(
+        "relative overflow-hidden bg-muted",
+        view === "grid" ? "h-48 w-full" : "h-44 w-full sm:h-full sm:w-64 sm:shrink-0",
+      )}
+    >
       <img
         src={project.images[0]}
         alt={`${project.name} in ${project.microMarket}, Mumbai`}
@@ -31,7 +36,9 @@ export function ProjectCard({
         height={800}
         className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
       />
-      <Badge className="absolute left-3 top-3 bg-charcoal text-charcoal-foreground">{project.status}</Badge>
+      <Badge className="absolute left-3 top-3 bg-charcoal text-charcoal-foreground">
+        {project.status}
+      </Badge>
       {project.reraStatus === "Registered" && (
         <Badge variant="secondary" className="absolute right-3 top-3 gap-1">
           <ShieldCheck className="h-3 w-3" /> RERA
@@ -102,12 +109,12 @@ export function ProjectCard({
 
       <div className="mt-5 flex flex-wrap gap-2">
         <Button asChild size="sm">
-          <Link to="/projects/$slug" params={{ slug: project.slug }}>
+          <Link to="/" params={{ slug: project.slug }}>
             View project
           </Link>
         </Button>
         <Button asChild size="sm" variant="outline">
-          <Link to="/app/visits">Tag site visit</Link>
+          <Link to="/">Tag site visit</Link>
         </Button>
       </div>
     </div>

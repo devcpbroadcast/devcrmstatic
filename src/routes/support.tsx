@@ -38,11 +38,11 @@ export const Route = createFileRoute("/support")({
 });
 
 const faqs = [
-  ["How do I get empanelled as a channel partner?", "Register with your RERA agent number and PAN. Verification typically completes within 48 hours, after which live inventory and payout terms unlock."],
-  ["How is site-visit attribution protected?", "Every tagged visit generates a unique code shared with the developer desk at the time of tagging. The code, timestamp and broker ID form the attribution record used at settlement."],
-  ["When are commissions paid?", "Payout cycles are set per project — typically 21 to 60 days from registration. The commission ledger tracks each deal from expected through approved, invoiced and paid."],
-  ["What happens if a developer disputes attribution?", "The deal moves to Disputed in your ledger and the network desk arbitrates using the tag record, lead trail and visit logs. Median resolution is 9 working days."],
-  ["Do you support NRI transactions?", "Yes. The NRI desk handles time-zone aware follow-ups, remote walkthroughs, FEMA and NRE/NRO documentation checklists and local representation for registration."],
+  ["How do I become a channel partner?", "Register using your RERA agent number and PAN. Your details are usually verified within 48 hours. Once approved, you can view available properties and commission details."],
+  ["How is my site visit tracked?", "Every site visit gets a unique visit code. This code, along with the visit time and your broker ID, is recorded and used to confirm your commission later."],
+  ["When will I receive my commission?", "Commission payments depend on the project and are usually paid within 21 to 60 days after registration. You can track every deal in your commission ledger—from expected to approved, invoiced and finally paid."],
+  ["What if a developer disputes my commission?", "If there is a dispute, the deal is marked as Disputed in your ledger. The network team reviews the visit code, lead details and visit records to resolve it. Most disputes are resolved within 9 working days."],
+  ["Do you support NRI buyers?", "Yes. Our NRI desk helps with different time zones, online property tours, FEMA and NRE/NRO documentation, and local support during registration."],
 ];
 
 function SupportPage() {
@@ -53,19 +53,18 @@ function SupportPage() {
           <p className="text-eyebrow">Support</p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Network desk</h1>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Mumbai desk operates Monday to Saturday, 9:30 AM to 8:00 PM IST. Attribution and payout
-            escalations are handled within one working day.
+            The Mumbai desk is available Monday to Saturday, from 9:30 AM to 8:00 PM IST. Any issues related to visit credit or commission payments are addressed within one working day.
           </p>
         </div>
       </div>
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            [Phone, "Call the desk", "+91 22 4000 8800"],
-            [Mail, "Email", "desk@rbn.network"],
-            [MessageSquare, "WhatsApp", "+91 98200 00000"],
-            [BookOpen, "Knowledge base", "Guides & policies"],
+            [Phone, "Call the desk", "+91 88550 22798"],
+            [Mail, "Email", "support@cpbroadcast.com"],
+            [MessageSquare, "WhatsApp", "+91 91722 67888"],
+            // [BookOpen, "Knowledge base", "Guides & policies"],
           ].map(([Icon, t, v], i) => {
             const I = Icon as typeof Phone;
             return (
@@ -109,16 +108,16 @@ function SupportPage() {
                   </div>
                   <div>
                     <Label>Category</Label>
-                    <Select defaultValue="onboarding">
+                    <Select defaultValue="1">
                       <SelectTrigger className="mt-1.5">
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="onboarding">Empanelment / onboarding</SelectItem>
-                        <SelectItem value="inventory">Inventory access</SelectItem>
-                        <SelectItem value="attribution">Attribution dispute</SelectItem>
-                        <SelectItem value="payout">Commission payout</SelectItem>
-                        <SelectItem value="other">Something else</SelectItem>
+                        <SelectItem value="1">Partner Registration or Join Us</SelectItem>
+                        <SelectItem value="2">Inventory access</SelectItem>
+                        <SelectItem value="3">Client / Lead Dispute </SelectItem>
+                        <SelectItem value="4">Brokerage & Payouts </SelectItem>
+                        <SelectItem value="5">Other </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

@@ -93,25 +93,7 @@ function AboutPage() {
           ))}
         </section>
 
-        <section className="rounded-lg border border-border bg-charcoal p-8 text-charcoal-foreground sm:p-10">
-          <h2 className="text-2xl font-bold tracking-tight">Roadmap</h2>
-          <ol className="mt-6 space-y-5">
-            {[
-              ["Now", "Mumbai marketplace, CRM, site-visit tagging and commission ledger"],
-              ["Q4 2026", "Unit-level comparables, developer scorecards, deal rooms"],
-              ["2027", "Pune, Bengaluru and NCR networks; institutional bulk desk"],
-              ["Beyond", "Settlement automation, escrow partners and financing rails"],
-            ].map(([when, what]) => (
-              <li key={when} className="grid grid-cols-[auto_minmax(0,1fr)] gap-4">
-                <span className="w-20 shrink-0 text-sm font-bold text-primary">{when}</span>
-                <span className="text-sm text-charcoal-foreground/80">{what}</span>
-              </li>
-            ))}
-          </ol>
-          <Button asChild className="mt-8">
-            <Link to="/register">Join the Network</Link>
-          </Button>
-        </section>
+       
       </div>
     </PublicShell>
   );

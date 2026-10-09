@@ -133,7 +133,7 @@ function Home() {
                   </SelectContent>
                 </Select>
                 <Button asChild className="h-11 rounded-xl bg-charcoal px-6 font-display font-bold text-charcoal-foreground hover:bg-charcoal/90">
-                  <Link to="/projects"><Search className="mr-2 h-4 w-4" /> Search</Link>
+                  <Link to="/"><Search className="mr-2 h-4 w-4" /> Search</Link>
                 </Button>
               </div>
               <p className="mt-3 text-xs text-muted-foreground">Try “2 BHK in Powai” or browse by micro-market.</p>
@@ -146,7 +146,7 @@ function Home() {
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Button asChild size="lg" className="rounded-full bg-gradient-primary px-7 font-display font-bold">
-                  <Link to="/projects">Explore live inventory <ArrowUpRight className="ml-1 h-4 w-4" /></Link>
+                  <Link to="/">Explore live inventory <ArrowUpRight className="ml-1 h-4 w-4" /></Link>
                 </Button>
                 <Link to="/register" className="inline-flex items-center gap-1 text-sm font-bold text-foreground underline decoration-primary decoration-2 underline-offset-4 hover:text-primary">Join the network <ArrowRight className="h-4 w-4" /></Link>
               </div>
@@ -188,10 +188,10 @@ function Home() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { icon: ShieldCheck, t: "Verified attribution", d: "Every lead and site visit carries a tag code, so payouts are never contested." },
-              { icon: Layers, t: "Live inventory truth", d: "Tower, floor band, carpet area and availability sync from the developer desk." },
-              { icon: Globe2, t: "NRI-ready", d: "Gulf and SEA desks with time-zone aware follow-ups and remote closure workflows." },
-              { icon: CalendarCheck, t: "Operational cadence", d: "Tasks, visits and follow-ups drive the funnel instead of memory." },
+              { icon: ShieldCheck, t: "Verified Visits", d: "Every lead and site visit gets a unique tag code, making it easy to track and avoid payout disputes." },
+              { icon: Layers, t: "Live Inventory", d: "Get up-to-date details on the tower, floor, carpet area and available units directly from the developer." },
+              { icon: Globe2, t: "NRI Support", d: "Our Gulf and Southeast Asia teams follow up based on your time zone and support remote bookings and closures." },
+              { icon: CalendarCheck, t: "Easy Follow-ups", d: "Tasks, site visits and follow-ups are tracked systematically, so nothing depends on memory." },
             ].map((f) => (
               <Card key={f.t} className="hover-lift">
                 <CardContent className="p-5">
